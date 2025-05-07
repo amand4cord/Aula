@@ -47,3 +47,38 @@ function exercicio5(){
     }
     
 }
+// Exercício 6 - Calculadora de IMC
+// Solicite ao usuário que insira seu peso e altura.
+// Calcule o Índice de Massa Corporal (IMC) utilizando a fórmula: IMC = peso
+// / (altura²).
+// Exiba o resultado em um alert e classifique o IMC de acordo com os
+// valores:
+// Menos de 18,5: Abaixo do peso
+// Entre 18,5 e 24,9: Peso normal
+// Entre 25 e 29,9: Sobrepeso
+// 30 ou mais: Obesidade
+
+function exercicio6() {
+    let peso = prompt("Digite seu peso (kg): ")
+    let altura = prompt("Digite sua altura (m): ")
+    let imc = peso / (altura * altura)
+
+    alert("Seu IMC é: " + imc)
+
+    if (imc < 18.5) {
+        console.log("Abaixo do peso - IMC: " + imc)
+    } else if (imc >= 18.5 && imc <= 24.9) {
+        console.log("Peso normal - IMC: " + imc)
+    } else if (imc >= 25 && imc <= 29.9) {
+        console.log("Sobrepeso - IMC: " + imc)
+    } else {
+        console.log("Obesidade - IMC: " + imc)
+    }
+}
+
+
+    
+
+ 
+
+
